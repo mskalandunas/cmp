@@ -5,6 +5,7 @@
 @media (min-width: $breakpoint-medium) {
     .navigation {
         align-items: center;
+        background-color: $main-background-color;
         display: flex;
         height: $navigation-height;
         justify-content: space-between;
