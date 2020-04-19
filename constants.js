@@ -12,7 +12,7 @@ const SOURCE = {
     CSS: CLIENT_DIRECTORY + '/**/*.css',
     HTML: CLIENT_DIRECTORY + '/*.html',
     JAVASCRIPT: CLIENT_DIRECTORY + '/js/index.js',
-    SASS: CLIENT_DIRECTORY + '/sass/base.scss',
+    SCSS: CLIENT_DIRECTORY + '/scss/base.scss',
     STATIC: [
         CLIENT_DIRECTORY + '/**/*.ico',
         CLIENT_DIRECTORY + '/**/*.jpg',
@@ -35,7 +35,7 @@ const TASKS = {
     DEFAULT: 'default',
     HTML: 'html',
     JAVASCRIPT: 'js',
-    SASS: 'sass',
+    SCSS: 'scss',
     STATIC: 'static',
     WATCH: 'watch'
 };
@@ -43,7 +43,7 @@ const TASKS = {
 const WATCH_FILES = {
     HTML: CLIENT_DIRECTORY + '/**/*.html',
     JAVASCRIPT: CLIENT_DIRECTORY + '/**/*.js',
-    SASS: CLIENT_DIRECTORY + '/**/*.scss'
+    SCSS: CLIENT_DIRECTORY + '/**/*.scss'
 };
 
 module.exports = {

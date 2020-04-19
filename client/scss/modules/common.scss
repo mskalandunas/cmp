@@ -1,0 +1,11 @@
+@import 'constants';
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: $main-background-color;
+    font-family: $main-body-font;
+    margin: 0;
+}

@@ -50,7 +50,7 @@ gulp.task(TASKS.JAVASCRIPT, () => gulp.src(SOURCE.JAVASCRIPT)
     .pipe(gulp.dest(DESTINATION.DIRECTORY))
 );
 
-gulp.task(TASKS.SASS, () => gulp.src(SOURCE.SASS)
+gulp.task(TASKS.SCSS, () => gulp.src(SOURCE.SCSS)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer(TARGET_BROWSERS))
@@ -69,7 +69,7 @@ gulp.task(TASKS.WATCH, () => {
     gulp.watch(SOURCE.HTML, gulp.series([TASKS.HTML]));
     gulp.watch(SOURCE.STATIC, gulp.series([TASKS.STATIC]));
     gulp.watch(SOURCE.TEMPLATES, gulp.series([TASKS.HTML]));
-    gulp.watch(WATCH_FILES.SASS, gulp.series([TASKS.SASS]));
+    gulp.watch(WATCH_FILES.SCSS, gulp.series([TASKS.SCSS]));
     gulp.watch(WATCH_FILES.JAVASCRIPT, gulp.series([TASKS.JAVASCRIPT]));
 });
 
@@ -77,7 +77,7 @@ gulp.task(TASKS.BUILD, gulp.series([
     TASKS.CSS,
     TASKS.HTML,
     TASKS.JAVASCRIPT,
-    TASKS.SASS,
+    TASKS.SCSS,
     TASKS.STATIC
 ]));
 
